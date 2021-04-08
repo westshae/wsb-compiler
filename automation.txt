@@ -1,0 +1,4 @@
+subreddit:wallstreetbets
+sort:new
+includetitle:n
+includebody:y
