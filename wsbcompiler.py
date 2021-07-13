@@ -5,11 +5,11 @@ from datetime import datetime
 
 #Authorises access to api
 reddit = praw.Reddit(
-    client_id="RjhnzJecumJ9pQ",
-    client_secret="djtK3aDFw8aVvY8isJMGdNowmt3G7w",
-    user_agent="wsbcompiler by u/wsbcompiler",
-    username="wsbcompiler",
-    password="unlikely@password18"
+    client_id=os.getenv('CLIENTID'),
+    client_secret=os.getenv('CLIENTSECRET'),
+    user_agent=os.getenv('USERAGENT'),
+    username=os.getenv('USERNAME'),
+    password=os.getenv('PASSWORD')
     )
 
 #Input a string, determine if it is true or false
